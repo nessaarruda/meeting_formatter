@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Calendar Chrome Extension",
+  "description": "This is a chrome extension for formatting google calendar invites",
+  "version": "1.0",
+  "browser_action": {
+      "default_title": "Click me",
+      "default_popup": "index.html"
+  },
+  "permissions": [
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+  ]
+}
