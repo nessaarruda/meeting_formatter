@@ -1,3 +1,4 @@
+alert(document.getElementById("userInput1")
 var element = document.activeElement;
 var h1 = document.createElement("h1");
 h1.innerHTML = "<div style='font-weight:normal; font-size: 12px'>" +

@@ -3,6 +3,7 @@
   "name": "Calendar Chrome Extension",
   "description": "This is a chrome extension for formatting google calendar invites",
   "version": "1.0",
+  "options_page": "options.html",
   "background": {
     "scripts": ["background.js"]
   },
