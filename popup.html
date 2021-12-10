@@ -14,19 +14,24 @@
     </style>
   </head>
 <body>
+  <div id="box">
   <h2 id="notification-ext">Bullet Points</h2>
   <form id="templateform">
     <p>
-      <label for="template">Choose your topics:</label><br />
-      <input id="userInput1">1</input>
-      <input id="userInput2">2</input>
-      <input id="userInput3">3</input>
-      <input id="userInput4">4</input>
+      <label for="template">Choose your topics or use placeholder:</label><br />
+      <input id="templateName" placeholder="Add title to save template"></input>
+      <input id="userInput1" placeholder="Objective(s)"></input>
+      <input id="userInput2" placeholder="Meeting Materials(s)"></input>
+      <input id="userInput3" placeholder="Subject Matter Expert(s)"></input>
+      <input id="userInput4" placeholder="Goal(s)/Next Steps(s)"></input>
     </p>
   </form>
   <p>
-    <button id='fillForm'>Save</button>
+    <button id='fillForm'>Insert Template</button>
+    <button id="saveTemplate">Save Template</button>
   </p>
+  <p>My Templates</p> 
 </body>
   <script src='action.js'></script>
+</div>
 </html>
