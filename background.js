@@ -1,6 +1,5 @@
 var background = {
 
-  templateName: '',
   userInput1: '',
   userInput2: '',
   userInput3: '',
@@ -14,14 +13,13 @@ var background = {
     });
   },
   setTemplate: function(request, sender, sendResponse){
-    this.templateName = request.name;
     this.userInput1 = request.userInput1;
     this.userInput2 = request.userInput2;
     this.userInput3 = request.userInput3;
     this.userInput4 = request.userInput4;
   },
   getTemplate: function(request, sender, sendResponse){
-    sendResponse([this.templateName,this.userInput1, this.userInput2, this.userInput3, this.userInput4]);
+    sendResponse([this.userInput1, this.userInput2, this.userInput3, this.userInput4]);
   }
 };
 
