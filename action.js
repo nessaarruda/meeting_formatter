@@ -3,16 +3,16 @@ document.getElementById('fillForm').addEventListener('click', function(){
   var input2 = document.getElementById("userInput2").value || 'Meeting Materials(s)'
   var input3 = document.getElementById("userInput3").value || 'Subject Matter Expert(s)'
   var input4 = document.getElementById("userInput4").value || 'Goal(s)/Next Steps(s)'
-  chrome.storage.local.set({input1: input1}, function() {
+  chrome.storage.sync.set({input1: input1}, function() {
   ;
 });
-  chrome.storage.local.set({input2: input2}, function() {
+  chrome.storage.sync.set({input2: input2}, function() {
   ;
 });
-  chrome.storage.local.set({input3: input3}, function() {
+  chrome.storage.sync.set({input3: input3}, function() {
   ;
 });
-  chrome.storage.local.set({input4: input4}, function() {
+  chrome.storage.sync.set({input4: input4}, function() {
   ;
 });
   chrome.tabs.executeScript({
@@ -41,16 +41,16 @@ document.getElementById('saveTemplate').addEventListener('click', function(){
   var jsonString = localStorage.getItem("template");
   var retrievedObject = JSON.parse(jsonString);
   var element = document.getElementById("box");
-  chrome.storage.local.set({input1: input1}, function() {
+  chrome.storage.sync.set({input1: input1}, function() {
   ;
 });
-  chrome.storage.local.set({input2: input2}, function() {
+  chrome.storage.sync.set({input2: input2}, function() {
   ;
 });
-  chrome.storage.local.set({input3: input3}, function() {
+  chrome.storage.sync.set({input3: input3}, function() {
   ;
 });
-  chrome.storage.local.set({input4: input4}, function() {
+  chrome.storage.sync.set({input4: input4}, function() {
   ;
 });
   let btn = document.createElement("button");
