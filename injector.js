@@ -1,4 +1,4 @@
-chrome.storage.sync.get(['input1','input2','input3','input4'], function(result) {
+chrome.storage.local.get(['input1','input2','input3','input4'], function(result) {
   var element = document.activeElement;
   var h1 = document.createElement("h1");
   h1.innerHTML = `<div style='font-weight:normal; font-size: 12px'>` +

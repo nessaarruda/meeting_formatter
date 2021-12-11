@@ -3,15 +3,10 @@
   "name": "Calendar Chrome Extension",
   "description": "This is a chrome extension for formatting google calendar invites",
   "version": "1.0",
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "run_at": "document_start",
-      "js": ["popup.js"]
-    }
-  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "browser_action": {
-      "default_title": "Click me",
       "default_popup": "popup.html"
   },
   "icons": {
@@ -20,7 +15,7 @@
     "128": "assets/images/icon128.png"
   },
   "permissions": [
-      "tabs",
+      "activeTab",
       "storage",
       "http://*/*",
       "https://*/*"
